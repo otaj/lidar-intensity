@@ -32,7 +32,7 @@ In order to predict intensity, use `python/model_eval.py`, the best model checkp
 
 ### Configs
 
-Folder configs contains configs for starting either `python/model_eval.py` or `python/model_train.py`. Each config in the toplevel `configs` directory is a list of configs from includes, which are merged together. The order is important, if there are two same keys in different included files, the one that was included later is kept.
+Folder configs contains configs for starting either `python/model_eval.py` or `python/model_run.py`. Each config in the toplevel `configs` directory is a list of configs from includes, which are merged together. The order is important, if there are two same keys in different included files, the one that was included later is kept.
 
 You will probably want to change `configs/includes/{gta,kitti}data/basedata.yml` and `config/includes/{gta,kitti}data/segment_data.yml`, which contains paths for data.
 
